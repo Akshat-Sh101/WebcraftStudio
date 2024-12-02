@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "framer-motion": "^11.12.0",
     "git": "^0.1.5",
     "github": "^14.0.0",
+    "lucide-react": "^0.462.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-intersection-observer": "^9.13.1",
     "react-scroll": "^1.9.0"
   },
   "devDependencies": {
