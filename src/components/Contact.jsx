@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer'
 
 export default function Contact() {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   })
 

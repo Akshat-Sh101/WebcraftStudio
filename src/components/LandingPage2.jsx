@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { ArrowRight } from 'lucide-react'
+import Carousel from './Carousel'
 
 const collageImages = [
   { src: 'https://th.bing.com/th?id=OIP.pFTVBh1F93ZFx4bPv_NYMAHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2', alt: 'Web Design Project 1' },
@@ -15,12 +16,12 @@ const collageImages = [
 
 export default function Hero() {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    triggerOnce: false,
     threshold: 0.1,
   })
 
   return (
-    <section id="home" className="bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20">
+    <section id="home" className="bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20 lg:h-screen">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <motion.div
@@ -84,6 +85,14 @@ export default function Hero() {
           </motion.div>
         </div>
       </div>
+      <motion.div
+            className='hidden lg:inline-block'
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : {}}
+            transition={{ duration: 1.5, delay: 0.5 }}
+          >
+              <Carousel/>
+        </motion.div>
     </section>
   )
 }
