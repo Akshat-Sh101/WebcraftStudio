@@ -22,7 +22,7 @@ export default function Hero() {
 
   return (
     <section id="home" className="bg-gradient-to-br from-blue-600 to-purple-700 text-white py-20 lg:h-screen">
-      <div className="container mx-auto px-4">
+      <div className="relative container mx-auto px-4 py-3 z-[10] mt-[22px]">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <motion.div
             className="lg:w-1/2 mb-10 lg:mb-0"

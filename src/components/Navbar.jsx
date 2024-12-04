@@ -10,7 +10,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 fixed w-full z-100 top-0 shadow-md backdrop-blur-lg">
+    <nav className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-4 fixed w-full z-100 top-0 shadow-md backdrop-blur-lg rounded-b-3xl z-[5000]">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-2xl font-bold cursor-pointer">

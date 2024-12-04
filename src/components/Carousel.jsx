@@ -15,44 +15,44 @@ function Carousel() {
                 ease:"none",
     
             })
-            gsap.to('.ri-arrow-right-line',{
+            gsap.to('.arrow',{
                 rotate:180,
             })
         }
         else{
             gsap.to('.content',{
                 transform:"translateX(0%)",
-                duration:10,
+                duration:8,
                 repeat: true,
                 ease:"none",
             })
-            gsap.to('.ri-arrow-right-line',{
+            gsap.to('.arrow',{
                 rotate:0,
             })
         }
     })
   return (
     <div id="page7">
-            <div id="marque">
+            <div id="marque"  className='border-4 border-t-* border-b-*'>
                 <div className="content">
-                    <h1>Make Your Home On Web</h1>
-                    <i className="ri-arrow-right-line"></i>
+                    <h1>Make Home On Web</h1>
+                    <img src="src\assets\arrow-right-line.svg" className='h-[80px] w-[80px] arrow'  alt="" />
                 </div>
                 <div className="content">
-                    <h1>Make Your Home On Web</h1>
-                    <i className="ri-arrow-right-line"></i>
+                    <h1>Make Home On Web</h1>
+                    <img src="src\assets\arrow-right-line.svg" className='h-[80px] w-[80px] arrow'  alt="" />
                 </div>
                 <div className="content">
-                    <h1>Make Your Home On Web</h1>
-                    <i className="ri-arrow-right-line h-5 w-5"></i>
+                    <h1>Make Home On Web</h1>
+                    <img src="src\assets\arrow-right-line.svg" className='h-[80px] w-[80px] arrow'  alt="" />
                 </div>
                 <div className="content">
-                    <h1>Make Your Home On Web</h1>
-                    <i className="ri-arrow-right-line"></i>
+                    <h1>Make Home On Web</h1>
+                    <img src="src\assets\arrow-right-line.svg" className='h-[80px] w-[80px] arrow'  alt="" />
                 </div>
                 <div className="content">
-                    <h1>Make Your Home On Web</h1>
-                    <i className="ri-arrow-right-line"></i>
+                    <h1>Make Home On Web</h1>
+                    <img src="src\assets\arrow-right-line.svg" className='h-[80px] w-[80px] arrow'  alt="" />
                 </div>
             </div>
         </div>

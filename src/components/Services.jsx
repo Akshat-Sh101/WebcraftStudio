@@ -17,7 +17,7 @@ function Services() {
           preserveAspectRatio="none"
         >
           <path
-            fill="rgba(59, 130, 246, 0.05)"
+            fill="rgba(59, 130, 246, 0.15)"
             fillOpacity="1"
             d="M0,32L48,53.3C96,75,192,117,288,122.7C384,128,480,96,576,90.7C672,85,768,107,864,128C960,149,1056,171,1152,165.3C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
           ></path>
@@ -25,6 +25,7 @@ function Services() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
+        <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ transition: { duration: 0.5 }, transition: { repeat: Infinity, repeatType: 'loop', duration: 0.5 },rotate: [0, 10, -10, 10, -10, 0], opacity: 0.8 }} src="src\assets\technical-support.png" alt="Shaking Image" className="shaking-image absolute h-[200px] top-[-12%] left-[60px] hidden lg:block" />
         <motion.div 
           className="text-center mb-16"
           initial={{ opacity: 0, y: -20 }}
