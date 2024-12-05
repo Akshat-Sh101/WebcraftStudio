@@ -1,6 +1,6 @@
 import './App.css'
 import LandingPage2 from './components/LandingPage2';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact';
