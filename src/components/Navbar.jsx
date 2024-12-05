@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import 'animate.css';
+
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
