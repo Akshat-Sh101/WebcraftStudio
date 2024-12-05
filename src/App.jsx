@@ -6,18 +6,21 @@ import Portfolio from './components/Portfolio'
 import Contact from './components/Contact';
 import 'animate.css';
 import Footer from './components/Footer';
-import ClientStats from './components/Clientstats';
+import Popup from './components/Popup';
+import Carousel from './components/Carousel';
+
+
 const App = () => {
   return (
-    <div className="font-sans">
+    <>
       <Navbar />
+      <Popup/>
       <LandingPage2 />
       <Services />
-      <ClientStats/>
       <Portfolio/>
       <Contact/>
       <Footer/>
-    </div>
+      </>
   );
 };
 

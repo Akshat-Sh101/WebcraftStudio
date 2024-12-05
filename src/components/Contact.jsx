@@ -10,7 +10,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="relative flex items-center justify-center min-h-screen bg-gray-200">
       <img src="https://www.gapinfotech.com/images/any-query.png" className="absolute h-[160px] w-[160px] left-[18%] top-[5%] rotate-[270deg] hidden lg:block" alt="" />
       <motion.div
         className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md"
@@ -59,6 +59,10 @@ const Contact = () => {
             Send
           </button>
         </form>
+        <div className="flex justify-center flex-col align-center items-center text-gray-600"> 
+          <h2 className="mt-3 font-bold">(OR)</h2>
+          <p className="mt-3 font-bold">Call us: +91 9599177805</p>
+        </div>
       </motion.div>
     </div>
   );

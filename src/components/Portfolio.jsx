@@ -10,21 +10,21 @@ const testimonials = [
     name: 'John Doe',
     role: 'CEO, TechCorp',
     content: 'WebcraftStudios delivered an outstanding website that exceeded our expectations. Their attention to detail and creativity are unmatched.',
-    avatar: '/placeholder.svg?height=128&width=128',
+    avatar: 'https://th.bing.com/th/id/OIP.dCpgPQ0i-xX2gZ-yonm54gHaHa?w=170&h=180&c=7&r=0&o=5&pid=1.7',
   },
   {
     id: 2,
     name: 'Jane Smith',
     role: 'Marketing Director, GrowthCo',
     content: 'Working with WebcraftStudios was a pleasure. They understood our vision and brought it to life with a beautiful, functional website.',
-    avatar: '/placeholder.svg?height=128&width=128',
+    avatar: 'https://th.bing.com/th/id/OIP.dCpgPQ0i-xX2gZ-yonm54gHaHa?w=170&h=180&c=7&r=0&o=5&pid=1.7',
   },
   {
     id: 3,
     name: 'Mike Johnson',
     role: 'Founder, StartupX',
     content: 'The team at WebcraftStudios is incredibly talented. They created a website that perfectly represents our brand and has helped us attract new customers.',
-    avatar: '/placeholder.svg?height=128&width=128',
+    avatar: 'https://th.bing.com/th/id/OIP.dCpgPQ0i-xX2gZ-yonm54gHaHa?w=170&h=180&c=7&r=0&o=5&pid=1.7',
   },
 ]
 
@@ -50,7 +50,12 @@ export default function Testimonials() {
   }
 
   return (
-    <section id="testimonials" className="py-24 bg-gray-200 relative overflow-hidden rounded-3xl shadow-lg">
+    <>
+    <span className="flex items-center bg-gray-200 ml-5 mr-5">
+  <span className="h-px flex-1 bg-black"></span>
+  <span className="h-px flex-1 bg-black"></span>
+</span>
+    <section id="testimonials" className="py-20 bg-gray-200 relative overflow-hidden shadow-lg">
       <div className="container mx-auto px-4 relative z-10">
         <h2 className="text-5xl font-bold text-center text-gray-800 mb-12">
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-600">
@@ -70,7 +75,7 @@ export default function Testimonials() {
               <Quote className="w-12 h-12 text-blue-500 mb-4" />
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 <motion.div 
-                  className="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg"
+                  className="w-32 h-32 rounded-full overflow-hidden border-4 border-blue-500 shadow-lg"
                   whileHover={{ scale: 1.1 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
@@ -111,6 +116,7 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
+    </>
   )
 }
 

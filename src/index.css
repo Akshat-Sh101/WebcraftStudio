@@ -3,16 +3,30 @@
 @tailwind utilities;
 
 html, body {
-    overflow-x: hidden;
-  }
-  
-  #carousel {
-    overflow-y: visible;
-  }
+    overflow-x:hidden;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
   
   .content {
     will-change: transform;
   }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-128px * 15));
+    }
+  }
+  
+  .animate-scroll {
+    animation: scroll 60s linear infinite;
+  }
+  
+  
 
 
   

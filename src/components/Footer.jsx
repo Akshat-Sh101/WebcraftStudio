@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a href="#" className="hover:text-blue-400 transition duration-300"><Facebook /></a>
               <a href="#" className="hover:text-blue-400 transition duration-300"><Twitter /></a>
-              <a href="#" className="hover:text-blue-400 transition duration-300"><Instagram /></a>
+              <a href="https://www.instagram.com/web.craft_studios/profilecard/?igsh=bjZlZW9iNWdieGt5" className="hover:text-blue-400 transition duration-300"><Instagram /></a>
               <a href="#" className="hover:text-blue-400 transition duration-300"><Linkedin /></a>
             </div>
           </div>
