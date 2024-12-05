@@ -7,7 +7,6 @@ import Contact from './components/Contact';
 import 'animate.css';
 import Footer from './components/Footer';
 import Popup from './components/Popup';
-import Carousel from './components/Carousel';
 
 
 const App = () => {

@@ -25,7 +25,7 @@ function Services() {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} whileHover={{ transition: { duration: 0.5 }, transition: { repeat: Infinity, repeatType: 'loop', duration: 0.5 },rotate: [0, 10, -10, 10, -10, 0], opacity: 0.8 }} src="./images/technical-support.png" alt="Shaking Image" className="shaking-image absolute h-[200px] top-[-12%] left-[60px] hidden lg:block" />
+        {/* <motion.img initial={{ opacity: 0 }} animate={{ opacity: 1 }} whileHover={{ transition: { duration: 0.5 }, transition: { repeat: Infinity, repeatType: 'loop', duration: 0.5 },rotate: [0, 10, -10, 10, -10, 0], opacity: 0.8 }} src="./images/technical-support.png" alt="Shaking Image" className="shaking-image absolute h-[200px] top-[-12%] left-[60px] hidden lg:block" /> */}
         <motion.div 
           className="text-center mb-16"
           initial={{ opacity: 0, y: -20 }}
