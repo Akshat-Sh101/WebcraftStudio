@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-
+import { NavLink } from 'react-router-dom'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,17 +21,34 @@ function Navbar() {
 
         {/* Desktop Links */}
         <div className="lg:flex space-x-8 hidden">
-          {['services', 'portfolio', 'contact'].map((section) => (
-            <Link
-              key={section}
-              to={section}
+
+            <NavLink
+              key={'/'}
+              to={'/WebcraftStudio/'}
               smooth={true}
               duration={500}
-              className="text-white hover:text-gray-200 text-lg font-medium transition-transform transform hover:scale-105"
+              className="hover:text-blue-400 transition-colors duration-300 text-white hover:text-gray-200 text-lg font-medium transition-transform transform hover:scale-105"
             >
-              {section.charAt(0).toUpperCase() + section.slice(1)}
-            </Link>
-          ))}
+              Home
+            </NavLink>
+            <NavLink
+              key={'/Sample'}
+              to={'/WebcraftStudio/Sample'}
+              smooth={true}
+              duration={500}
+              className="hover:text-blue-400 transition-colors duration-300 text-white hover:text-gray-200 text-lg font-medium transition-transform transform hover:scale-105"
+            >
+              Sample
+            </NavLink>
+            <a
+              key={'/Contact'}
+              href={''}
+              smooth={true}
+              duration={500}
+              className="hover:text-blue-400 transition-colors duration-300 text-white hover:text-gray-200 text-lg font-medium transition-transform transform hover:scale-105"
+            >
+              Contact
+            </a>
         </div>
 
         {/* Hamburger Menu for Mobile */}
@@ -69,18 +86,37 @@ function Navbar() {
         >
           ✕
         </button>
-        {['services', 'portfolio', 'contact'].map((section) => (
-          <Link
-            key={section}
-            to={section}
+
+          <NavLink
+            key={'/WebcraftStudio/'}
+            to={'/WebcraftStudio/'}
             smooth={true}
             duration={500}
             className="block px-6 py-4 text-lg font-medium hover:bg-purple-600 transition-colors"
             onClick={toggleMenu}
           >
-            {section.charAt(0).toUpperCase() + section.slice(1)}
-          </Link>
-        ))}
+            Home
+          </NavLink>
+          <NavLink
+            key={'/WebcraftStudio/Sample'}
+            to={'/WebcraftStudio/Sample'}
+            smooth={true}
+            duration={500}
+            className="block px-6 py-4 text-lg font-medium hover:bg-purple-600 transition-colors"
+            onClick={toggleMenu}
+          >
+            Sample
+          </NavLink>
+          <a
+            key={'contact'}
+            href={''}
+            smooth={true}
+            duration={500}
+            className="block px-6 py-4 text-lg font-medium hover:bg-purple-600 transition-colors"
+            onClick={toggleMenu}
+          >
+            Contact
+          </a>
       </div>
     </nav>
   );

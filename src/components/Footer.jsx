@@ -23,10 +23,10 @@ export default function Footer() {
           <div className="w-full md:w-1/3">
             <h4 className="text-lg font-semibold mb-2">Connect With Us</h4>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-blue-400 transition duration-300"><Facebook /></a>
-              <a href="#" className="hover:text-blue-400 transition duration-300"><Twitter /></a>
+              <a href="https://www.facebook.com/WebCraftStudios" className="hover:text-blue-400 transition duration-300"><Facebook /></a>
+              <a href="https://x.com/WebCraftStudios" className="hover:text-blue-400 transition duration-300"><Twitter /></a>
               <a href="https://www.instagram.com/web.craft_studios/profilecard/?igsh=bjZlZW9iNWdieGt5" className="hover:text-blue-400 transition duration-300"><Instagram /></a>
-              <a href="#" className="hover:text-blue-400 transition duration-300"><Linkedin /></a>
+              <a href="https://www.linkedin.com/in/webcraft-studios-a1532b340?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" className="hover:text-blue-400 transition duration-300"><Linkedin /></a>
             </div>
           </div>
         </div>
