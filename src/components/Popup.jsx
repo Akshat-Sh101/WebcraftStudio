@@ -31,7 +31,7 @@ const Popup = () => {
             {isVisible && (
                 <div className="popup z-[1000]">
                     <div className="popup-content flex flex-col items-center">
-                        <img src="src\assets\WhatsApp Image 2024-12-03 at 8.01.31 PM.jpeg" alt="Profile" className="profile-pic bg-cover " />
+                        <img src="./images/logo.jpeg" alt="Profile" className="profile-pic bg-cover " />
                         <h2>Follow Us on Instagram</h2>
                         <div className='mt-3'>
                             <button onClick={handleFollow}>Follow</button>
