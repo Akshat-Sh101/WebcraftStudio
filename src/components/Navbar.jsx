@@ -14,9 +14,9 @@ function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-2xl font-bold cursor-pointer">
-          <Link to="home" smooth={true} duration={500}>
+          <NavLink to="/WebcraftStudio" smooth={true} duration={500}>
             Webcraft Studios
-          </Link>
+          </NavLink>
         </div>
 
         {/* Desktop Links */}
@@ -24,7 +24,7 @@ function Navbar() {
 
             <NavLink
               key={'/'}
-              to={'/WebcraftStudio/'}
+              to={'/WebcraftStudio'}
               smooth={true}
               duration={500}
               className="hover:text-blue-400 transition-colors duration-300 text-white hover:text-gray-200 text-lg font-medium transition-transform transform hover:scale-105"
@@ -89,7 +89,7 @@ function Navbar() {
 
           <NavLink
             key={'/WebcraftStudio/'}
-            to={'/WebcraftStudio/'}
+            to={'/WebcraftStudio'}
             smooth={true}
             duration={500}
             className="block px-6 py-4 text-lg font-medium hover:bg-purple-600 transition-colors"
