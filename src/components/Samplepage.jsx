@@ -67,7 +67,7 @@ export default function Samplepage() {
           >
             <NavLink
               key={'/'}
-              to={'/WebcraftStudio/'}
+              to={'/'}
             >
               Get Started
             </NavLink>

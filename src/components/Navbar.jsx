@@ -14,7 +14,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-white text-2xl font-bold cursor-pointer">
-          <NavLink to="/WebcraftStudio" smooth={true} duration={500}>
+          <NavLink to="/WebcraftStudio/" smooth={true} duration={500}>
             Webcraft Studios
           </NavLink>
         </div>
@@ -23,8 +23,8 @@ function Navbar() {
         <div className="lg:flex space-x-8 hidden">
 
             <NavLink
-              key={'/'}
-              to={'/WebcraftStudio'}
+              key={'/webcraftstudio'}
+              to={'/'}
               smooth={true}
               duration={500}
               className="hover:text-blue-400 transition-colors duration-300 text-white hover:text-gray-200 text-lg font-medium transition-transform transform hover:scale-105"
@@ -33,7 +33,7 @@ function Navbar() {
             </NavLink>
             <NavLink
               key={'/Sample'}
-              to={'/WebcraftStudio/Sample'}
+              to={'/Sample'}
               smooth={true}
               duration={500}
               className="hover:text-blue-400 transition-colors duration-300 text-white hover:text-gray-200 text-lg font-medium transition-transform transform hover:scale-105"
@@ -89,7 +89,7 @@ function Navbar() {
 
           <NavLink
             key={'/WebcraftStudio/'}
-            to={'/WebcraftStudio'}
+            to={'/'}
             smooth={true}
             duration={500}
             className="block px-6 py-4 text-lg font-medium hover:bg-purple-600 transition-colors"
@@ -99,7 +99,7 @@ function Navbar() {
           </NavLink>
           <NavLink
             key={'/WebcraftStudio/Sample'}
-            to={'/WebcraftStudio/Sample'}
+            to={'/Sample'}
             smooth={true}
             duration={500}
             className="block px-6 py-4 text-lg font-medium hover:bg-purple-600 transition-colors"

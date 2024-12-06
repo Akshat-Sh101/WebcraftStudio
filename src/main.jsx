@@ -8,15 +8,15 @@ import {createBrowserRouter,RouterProvider} from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/WebcraftStudio/",
+    path: "/",
     element: <Layout/>,
     children:[
       {
-        path:"/WebcraftStudio/",
+        path:"/",
         element:<App />
       },
       {
-        path:"/WebcraftStudio/Sample",
+        path:"/Sample",
         element: <Samplepage/>
       },
     ]
